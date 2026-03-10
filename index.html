@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Classic Popcat Practice</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 水平置中 */
+            justify-content: flex-start; /* 不垂直置中，靠上排 */
+            background-color: #bdaa90;
+        }
+
+        .title {
+            width: 80%;
+            max-width: 600px;
+            margin-top: 2em;
+            display: block;
+        }
+
+        .cat-img {
+            width: 100%;
+            max-width: 800px;
+            flex: 1; /* 填滿剩餘空間 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff;
+            font-size: 80px;
+            -webkit-text-stroke: 3px #000000;
+            -webkit-user-select: none;
+            user-select: none; /* 防止文字被選取 */
+        }
+
+        #p {
+            background-image: url('imgs/p.png');
+            background-position: bottom center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        #op {
+            background-image: url('imgs/op.png');
+            background-position: bottom center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none; /* 新增即可，不需要顯示 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="title" src="imgs/popcat.svg">
+        <div class="cat-img" id="p">0</div>
+        <div id="op"></div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
