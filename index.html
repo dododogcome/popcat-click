@@ -61,6 +61,20 @@
         <div class="cat-img" id="p">0</div>
         <div id="op"></div>
     </div>
+    <script>
+        let count = 0;
+        let catImg = document.getElementById("p");
+        let audio = new Audio("pops/pop1.mp3");
+        function add(){
+            count++;
+            console.log(count);
+            catImg.innerHTML = count;
+            audio.play();
+        }
+        document.addEventListener("mousedown", add)
+
+ 
+    </script>
 
 
 
