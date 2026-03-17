@@ -51,7 +51,6 @@
             background-position: bottom center;
             background-size: contain;
             background-repeat: no-repeat;
-            display: none; /* 新增即可，不需要顯示 */
         }
     </style>
 </head>
@@ -69,9 +68,16 @@
             count++;
             console.log(count);
             catImg.innerHTML = count;
+            catImg.id = "op";
             audio.play();
         }
-        document.addEventListener("mousedown", add)
+        
+        function close(){
+            catImg.id = "p";
+        }
+
+        document.addEventListener("mousedown", add);
+        document.addEventListener("mouseup",close);
 
  
     </script>
